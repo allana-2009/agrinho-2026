@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroVerde — Irrigação Inteligente Solar</title>
+  <meta name="description" content="Ideia sustentável para o agronegócio: sistema de irrigação inteligente movido a energia solar com sensores de umidade do solo." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">🌱 AgroVerde</a>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="Plantação sustentável com painéis solares" />
+    </div>
+    <div class="container hero-content">
+      <h1>Irrigação Inteligente <span class="highlight">Movida a Sol</span></h1>
+      <p class="hero-text">
+        Uma solução sustentável para o agronegócio que combina energia solar,
+        sensores de umidade do solo e automação para economizar água e aumentar a produtividade.
+      </p>
+      <a href="#calculadora" class="btn-primary">Calcular Economia</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>A Ideia</h2>
+      <p class="lead">
+        Painéis solares alimentam bombas de água acionadas apenas quando sensores
+        detectam que o solo precisa de irrigação. Resultado: menos desperdício de água,
+        zero emissão de carbono e safras mais saudáveis.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <img src="images/solar.jpg" alt="Painéis solares no campo" class="card-img" />
+          <div class="icon">☀️</div>
+          <h3>Energia Solar</h3>
+          <p>Painéis fotovoltaicos no campo alimentam o sistema sem depender da rede elétrica.</p>
+        </div>
+        <div class="card">
+          <img src="images/sensor.jpg" alt="Sensor de umidade no solo" class="card-img" />
+          <div class="icon">💧</div>
+          <h3>Sensores de Umidade</h3>
+          <p>Medem a água no solo em tempo real, irrigando só onde e quando é preciso.</p>
+        </div>
+        <div class="card">
+          <img src="images/iot.jpg" alt="Monitoramento via app" class="card-img" />
+          <div class="icon">📡</div>
+          <h3>Monitoramento IoT</h3>
+          <p>Aplicativo mostra dados da lavoura ao produtor de qualquer lugar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="section section-alt">
+    <div class="container">
+      <h2>Benefícios</h2>
+      <ul class="benefits">
+        <li><strong>Até 60%</strong> de economia de água</li>
+        <li><strong>40%</strong> de redução nos custos de energia</li>
+        <li><strong>+25%</strong> de aumento médio na produtividade</li>
+        <li><strong>Zero</strong> emissões diretas de CO₂</li>
+        <li>Retorno do investimento em <strong>2 a 3 anos</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="calculadora" class="section">
+    <div class="container">
+      <h2>Calcule sua Economia</h2>
+      <p class="lead">Descubra quanta água e dinheiro sua fazenda pode economizar por mês.</p>
+      <form id="calc-form" class="calc">
+        <label>
+          Área irrigada (hectares)
+          <input type="number" id="hectares" min="1" value="10" required />
+        </label>
+        <label>
+          Consumo atual de água (litros/dia por hectare)
+          <input type="number" id="consumo" min="1" value="50000" required />
+        </label>
+        <label>
+          Custo da água (R$ / 1000 litros)
+          <input type="number" id="custo" min="0" step="0.01" value="4.50" required />
+        </label>
+        <button type="submit" class="btn-primary">Calcular</button>
+      </form>
+      <div id="resultado" class="resultado" hidden>
+        <h3>Resultado estimado</h3>
+        <p>Economia de água: <strong id="agua"></strong> litros/mês</p>
+        <p>Economia financeira: <strong id="dinheiro"></strong> /mês</p>
+        <p>Equivalente a <strong id="piscinas"></strong> piscinas olímpicas por ano 🏊</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="container">
+      <p>🌍 AgroVerde — Tecnologia sustentável para o campo brasileiro</p>
+      <p class="small">Projeto conceitual · contato@agroverde.eco</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
